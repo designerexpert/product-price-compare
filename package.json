@@ -1,0 +1,31 @@
+{
+    "name": "product-price-compare",
+    "version": "1.0.0",
+    "description": "Compare Product Prices from Different Sources.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "client": "cd ./client && npm start",
+        "build": "npm install-dependencies && cd ./client npm run build && cd ..",
+        "install-dependencies": "cd ./client npm i && cd.. && npm i",
+        "dev": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/designerexpert/product-price-compare.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/designerexpert/product-price-compare/issues"
+    },
+    "homepage": "https://github.com/designerexpert/product-price-compare#readme",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.6",
+        "winston": "^3.2.1"
+    }
+}
